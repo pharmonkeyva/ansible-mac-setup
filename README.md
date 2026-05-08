@@ -58,29 +58,17 @@ Applications (installed with Homebrew Cask):
 
 Packages (installed with Homebrew):
 
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - awscli
+  - bat
   - git
-  - gh
-  - go
   - gpg
-  - httpie
+  - iterm2
   - iperf
-  - libevent
-  - sqlite
-  - nmap
-  - node
-  - nvm
-  - php
+  - kubernetes-cli
+  - terraform
   - ssh-copy-id
-  - readline
   - openssl
-  - pv
+  - visual-studio-code
   - wget
-  - wrk
-  - zsh-history-substring-search
 
 My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
