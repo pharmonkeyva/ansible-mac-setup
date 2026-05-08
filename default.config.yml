@@ -1,0 +1,52 @@
+---
+configure_dotfiles: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+dockitems_persist: []
+
+dotfiles_repo: https://github.com/pharmonkeyva/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_version: main # Replace with your default branch
+dotfiles_files:
+#  - .zshrc #will configure own with OhMyZsh.
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  - awscli
+  - bat
+  - git
+  - gpg
+  - iterm2
+  - iperf
+  - kubernetes-cli
+  - terraform
+  - ssh-copy-id
+  - openssl
+  - visual-studio-code
+  - wget
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - firefox
+  - google-chrome
+  - licecap
+  - slack
+
+osx_script: "~/.osx --no-restart" 
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
